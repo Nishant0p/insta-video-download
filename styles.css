@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    
+    padding: 20px;
+    border-radius: 16px; /* Increased border-radius for more curve */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Make the container responsive */
+    max-width: 400px; /* Set a max width for larger screens */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%; /* Full width for mobile */
+    padding: 10px;
+    margin-bottom: 10px;
+   
+    border-radius: 12px; /* Increased border-radius for more curve */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px; /* Increased border-radius for more curve */
+    cursor: pointer;
+    width: 100%; /* Full width for mobile */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Add some padding for smaller screens */
+    }
+
+    .container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    input, button {
+        padding: 12px; /* Increase padding for better touch targets */
+    }
+}
