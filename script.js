@@ -1,7 +1,7 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
     const videoUrl = document.getElementById('videoUrl').value;
     const userId = ''; // Add user ID if needed for specific types
-    const apiKey = '62c91fae-0bb2-428b-aff2-d54359e2e87a'; // Replace with your actual API key
+    const apiKey = ''; // Replace with your actual API key
 
     const data = {
         video_url: videoUrl,
@@ -45,4 +45,5 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
         console.error("Error:", error);
         document.getElementById('result').innerText = 'Error downloading video. Please check the URL.';
     });
+
 });
