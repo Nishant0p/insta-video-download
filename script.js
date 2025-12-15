@@ -1,7 +1,7 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
     const videoUrl = document.getElementById('videoUrl').value;
     const userId = ''; // Add user ID if needed for specific types
-    const apiKey = ''; // Replace with your actual API key
+    const apiKey = '2b8df78a-ab0a-4261-ad1a-174d1925a715'; // Replace with your actual API key
 
     const data = {
         video_url: videoUrl,
@@ -47,3 +47,4 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
     });
 
 });
+
